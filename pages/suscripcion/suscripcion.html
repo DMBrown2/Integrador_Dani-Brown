@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="/CSS/suscricpcion.css">
+    <link rel="stylesheet" href="/CSS/styless.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="main-header">
+
+            <!-- MENU HAMBURGUESA  -->
+            <input type="checkbox" id="burger" class="input-burger">
+            <label class="burger-container" for="burger">
+                <div class="burger"></div>
+            </label>
+
+            <!-- CLAIM + LOGO + USER INFO  -->
+
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+
+            <div class="user-info">
+                <i class="fa-regular fa-user user-avatar"></i>
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+            <div class="claim-contenedor">
+                <h1 class=" titulo-principal">Knowledge is</h1>
+                <h2 class="palabra-resaltada">Strength.</h2>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+
+                    <!-- Enlaces del menu de navegacion -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Administrador/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/suscripcion/suscripcion.html">Me quiero subscribir!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros/nosotros.html">Acerca de nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="titulo-form">
+            <h1>Inscribite a la comunidad</h1>
+        </div>
+
+        <div class="form-container">
+
+            <form class="form">
+                <div class="input-group">
+
+                    <div class="input-nombre">
+                        <label for="NOMBRE"> Nombre y Apellido:</label>
+                        <input type="text" name="nombre" id="NOMBRE" placeholder="Nombre y Apellido" required
+                            minlength="4" maxlength="120" pattern="^[a-zA-Z ]+$" autocomplete>
+                    </div>
+
+                    <div class="input-email">
+                        <label for="correo">Email:</label>
+                        <input type="email" name="email" id="correo" placeholder="email" required minlength="6"
+                            maxlength="150" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
+                    </div>
+
+                    <div class="input-password">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="password" id="password" minlength="8" maxlength="15">
+                    </div>
+
+                    <div class="input-password2">
+                        <label for="password">Repetir contraseña:</label>
+                        <input type="password" name="password" id="password" minlength="8" maxlength="15">
+                    </div>
+
+                    <div class="input-edad">
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" id="edad" placeholder="Edad" required min="16" max="130">
+                    </div>
+
+                    <div class="input-nacimiento">
+                        <label for="">Fecha Nacimiento:</label>
+                        <input type="date" name="nacimiento">
+                    </div>
+
+                    <div class="input-clasif">
+                        <label for="clasif">Clasificación favorita:</label>
+                        <input class="input-inline" id="clasif" type="checkbox" name="clasif" value="suspenso"> Suspenso
+                        <input class="input-inline" id="clasif" type="checkbox" name="clasif" value="Romance"> Romance
+                        <input class="input-inline" id="clasif" type="checkbox" name="clasif" value="Terros"> Terror
+                        <input class="input-inline" id="clasif" type="checkbox" name="clasif" value="Misterio"> Misterio
+                        <input class="input-inline" id="clasif" type="checkbox" name="clasif" value="Drama"> Drama
+                    </div>
+
+                    <div class="input-genero">
+                        <label for="genero">Género:</label>
+                        <input type="radio" class="input-inline" id="genero" name="genero" value="mujer"> Mujer
+                        <input type="radio" class="input-inline" id="genero" name="genero" value="hombre"> Hombre
+                        <input type="radio" class="input-inline" id="genero" name="genero" value="otro"> Otro
+                    </div>
+
+                    <div class="input-imagen">
+                        <label for="image">Subí tu foto:</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+
+                </div>
+
+                <div class="btn-registro">
+                    <button class="btn" type="submit">Subscribir</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+
+        <section class="footer-social">
+            <div class="descripcion-social">
+                Seguinos en nuestras redes y enterate todas las novedades:
+            </div>
+            <div class="iconos-social">
+                <div class="icono-ig">
+                    <i class="fa-brands fa-square-instagram icono"></i>
+                    <p>@instagram</p>
+                </div>
+                <div class="icono-fb">
+                    <i class="fa-brands fa-facebook icono"></i>
+                    <p>@facebook</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-contacto">
+            <div class="direccion">
+                <i class="fa-solid fa-location-dot icono"></i>
+                <p>Dirección: Lafinur 3396, CABA. </p>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope icono"></i>
+                <p>Email: hello@liberexpress.com</p>
+            </div>
+            <div class="telefono">
+                <i class="fa-solid fa-phone-volume icono"></i>
+                <p>Teléfono: (011) 1521864648</p>
+            </div>
+        </section>
+
+        <section class="footer-info">
+            <p>Somos una compañía sustentable con más de 30 años de trayectoria en el mercado.</p>
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

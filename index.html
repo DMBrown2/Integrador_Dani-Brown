@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Dani Brown</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="/CSS/styless.css">
+    <link rel="stylesheet" href="/CSS/slider.css">
+    <link rel="stylesheet" href="/CSS/cards.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+
+            <!-- MENU HAMBURGUESA  -->
+            <input type="checkbox" id="burger" class="input-burger">    
+            <label class="burger-container" for="burger">
+                <div class="burger"></div>
+            </label>
+
+<!-- CLAIM + LOGO + USER INFO  -->
+
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+
+            <div class="user-info">
+                <i class="fa-regular fa-user user-avatar"></i>
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+            <div class="claim-contenedor">
+                <h1 class=" titulo-principal">Knowledge is</h1>
+                <h2 class="palabra-resaltada">Strength.</h2>
+            </div>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+
+                <!-- Enlaces del menu de navegacion -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Administrador/admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/suscripcion/suscripcion.html">Me quiero subscribir!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/nosotros/nosotros.html">Acerca de nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+        
+    <main>
+        <!-- SECCION BANNER  -->
+        <section class="section-banner">
+            <div class="slider">
+
+                <!-- Seccion de inputs para slider -->
+           <!-- input:radio#slide-$*3 // mismo nombre para que cuando clickee uno se desclickee el otro -->
+
+           <input type="radio" name="slider" id="slide-1">
+           <input type="radio" name="slider" id="slide-2">
+           <input type="radio" name="slider" id="slide-3">
+
+            <!-- Seccion de botones personalizados para slider (labels) -->
+             <div class="slider-buttons">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+             </div>
+
+             <!-- Seccion imagenes para slider  -->
+             <div class="slider-content">
+
+                <div class="slide slide-1">
+                    <img src="/assets/images/header/header.png" alt="varios libros" class="varios-libros">
+                </div>
+                <div class="slide slide-2"> <img src="https://images.ctfassets.net/qpn1gztbusu2/2E7qxF6c0Bw4f73XcvU1jd/a5a2fa17e8b710631baec056a23facd4/Mejores_libros_de_aventuras_para_ni_os_10_a_12_anos.webp?fm=jpg&w=3840&q=70" alt="ilustra libro abierto">
+                </div>
+                <div class="slide slide-3"><img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2022/10/webs-para-descargar-libros-gratis.jpg" alt="dibujo pila de libros">
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="product-gallery">
+            <h3 class="section-title">Destacados</h3>
+
+            <div class="product-container">
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 1 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tiempo-entre-costuras.webp" alt="tiempo-entre-costuras"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Nuevo!</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <a href="/pages/detalle-card1/card1.html" target="_blank" title="Ver detalle"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Novela Romantica </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">El tiempo entre costuras</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $50.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 2 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+                    
+                            <img src="/assets/images/cards/tapa-2.jpg" alt="Harry Potter y la cámara secreta" class="card-image">
+
+                        <div class="card-status">
+                            <p>Best seller!</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Ficcoón </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">Harry Potter y la cámara secreta</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $75.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 3 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-3.webp" alt="El resplandor"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Best seller!</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Terror </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">El resplandor</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $40.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 4 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-4.webp" alt="Cuentos de otoño"
+                            class="card-image">
+
+                        <!-- <div class="card-status">
+                            <p>Nuevo!</p>
+                        </div> -->
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Cuentos </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">Cuentos de otoño</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $10.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 5 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-5.jpg" alt="Bestiario"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Clásico</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Cuentos </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">Bestiario</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $25.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 6 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-6.jpg" alt="El príncipe"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Clásico</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> No-ficción </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">El príncipe</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $50.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 7 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-7.jpg" alt="Corazon descalzo"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Best seller!</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Novela Romantica </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">Corazón descalzo</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $70.000
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ================================== -->
+                <!-- ================================== -->
+                <!-- CARD 8 -->
+                <!-- ================================== -->
+                <!-- ================================== -->
+
+                <article class="card">
+                    <div class="card-content"> <!-- Imagen+STATUS+ICONOS+BOTON -->
+
+                        <img src="/assets/images/cards/tapa-8.jfif" alt="el cazador del destino"
+                            class="card-image">
+
+                        <div class="card-status">
+                            <p>Nuevo!</p>
+                        </div>
+
+                        <div class="card-icon-container">
+
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                        </div>
+
+                        <button class="card-add">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <!-- GÉNERO -->
+                        <h4 class="genero"> Novela Romantica </h4>
+                        <!-- TITULO DEL LIBRO -->
+                        <h4 class="titulo-libro">El cazador del destino</h4>
+
+                        <!-- Seccion de valoraciones -->
+                        <div class="card-rate">
+                            <div class="icon-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="card-review">
+                                (1 review)
+                            </div>
+                        </div>
+                        <div class="card-price">
+                            $30.000
+                        </div>
+                    </div>
+                </article>
+
+                <div class="btn-vermas">
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="caracteristicas">
+
+            <div class="caracteristica-1">
+                <i class="fa-solid fa-truck-fast icono"></i>
+                <p>Envios a todo el país</p>
+            </div>
+
+            <div class="caracteristica-2">
+                <i class="fa-solid fa-comments icono"></i>
+                <p>Comunidad: club de lectura y envios especiales</p>
+            </div>
+
+            <div class="caracteristica-3 icono">
+                <i class="fa-solid fa-hand-holding-dollar icono"></i>
+                <p>El mejor precio garantizado</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer"> 
+
+        <section class="footer-social">
+            <div class="descripcion-social">
+                Seguinos en nuestras redes y enterate todas las novedades:
+            </div>
+            <div class="iconos-social">
+                <div class="icono-ig">
+                    <i class="fa-brands fa-square-instagram icono"></i> <p>@instagram</p>
+                </div>
+                <div class="icono-fb">
+                    <i class="fa-brands fa-facebook icono"></i> <p>@facebook</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-contacto">
+            <p class="titu-contacto">Contactanos</p>
+            <div class="direccion">
+                <i class="fa-solid fa-location-dot icono"></i> <p>Lafinur 3396, CABA.</p>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope icono"></i><p>hello@liberexpress.com</p>
+            </div>
+            <div class="telefono">
+                <i class="fa-solid fa-phone-volume icono"></i><p>(011) 1521864648</p>
+            </div>
+        </section> 
+        
+        <section class="footer-info">
+            <p>Somos una compañía sustentable con más de 30 años de trayectoria en el mercado.</p> 
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    text-transform: none;
+}
+
+:root {
+    --color-primario: #c9e9f7;
+    --color-secundario: #f44344;
+    --color-terciario: #000000;
+    --hover-color: #6cd2c3;
+    --font: 'Raleway', sans-serif;
+    --light-color: #abc0c8;
+    --lighter-color: #daf3fc;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.detalle-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contenedor-imagen {
+        position: relative;
+        background-color: var(--lighter-color);
+        border-radius: 10%;
+        width: 350px;
+        height: 450px;
+        margin: 15px;
+
+        .detalle-img {
+        position: absolute;
+        left: 28px;
+        top: 25px;
+        height: 400px;
+        padding: 25px;
+        }
+
+    }
+
+    .contenedor-info {
+        position: relative;
+        width: 350px;
+        border: 1px solid var(--lighter-color);
+        padding: 15px;
+        border-radius: 10%;
+        margin: 15px;
+
+        .titulo-detalle {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .precio {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--color-secundario);
+            margin-bottom: 8px;
+        }
+
+        .detalle-info {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .btn-comprar {
+            text-align: center;
+            position:absolute;
+            bottom: 10px;
+            left: 50%;
+    
+            button {
+                color: var(--color-primario);
+                border: none;
+                background-color: var(--color-secundario);
+                width: 60px;
+                height: 33px;
+                transform: translateX(-50%);
+                margin-bottom: 5px;
+                font-family: var(--font);
+                transition: background-color .25s ease-in-out, color .25s ease-in-out;
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--hover-color);
+                    color: var(--color-secundario);
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (width > 768px) {
+
+    main {
+        margin-top: 150px;
+    }
+
+    .detalle-card1 {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+
+        .contenedor-info {
+            height: 450px;
+        }
+    }
+
+}

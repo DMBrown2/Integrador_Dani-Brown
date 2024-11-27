@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="/CSS/styless.css">
+    <link rel="stylesheet" href="/CSS/admin.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="main-header">
+
+            <!-- MENU HAMBURGUESA  -->
+            <input type="checkbox" id="burger" class="input-burger">
+            <label class="burger-container" for="burger">
+                <div class="burger"></div>
+            </label>
+
+            <!-- CLAIM + LOGO + USER INFO  -->
+
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+
+            <div class="user-info">
+                <i class="fa-regular fa-user user-avatar"></i>
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+            <div class="claim-contenedor">
+                <h1 class=" titulo-principal">Knowledge is</h1>
+                <h2 class="palabra-resaltada">Strength.</h2>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+
+                    <!-- Enlaces del menu de navegacion -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Administrador/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/suscripcion/suscripcion.html">Me quiero subscribir!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros/nosotros.html">Acerca de nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-descripcion">
+            <h1 class="titulo-admin">Administrador</h1>
+            <p>Hay un total de X productos</p>
+        </div>
+
+        <div class="botones">
+            <div class="btn-sumar-status">
+                <button>Agregar status</button>
+            </div>
+            <div class="btn-sumar-producto">
+                <button>Agregar producto</button>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table border="1" class="admin-table">
+
+            <!-- Cabecera de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Género</th>
+                        <th>Status</th>
+                        <th>Precio</th>
+                        <th>Comentarios</th>
+                        <th>Tools</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Cuerpo de la tabla -->
+
+                    <!-- =========== -->
+                    <!-- FILA 1 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tiempo-entre-costuras.webp" alt="Tiempo entre costuras" class="table-image">
+                        </td>
+                        <td class="name-cell">El tiempo entre costuras</td>
+                        <td class="genero-cell">Novela romántica</td>
+                        <td class="status-cell">Nuevo</td>
+                        <td class="precio-cell">$50.000</td>
+                        <td class="coment-cell">
+                                Vendió bien, reponer stock si se acaba.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- =========== -->
+                    <!-- FILA 2 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-2.jpg" alt="Harry Potter y la cámara secreta" class="table-image">
+                        </td>
+                        <td class="name-cell">Harry Potter y la cámara secreta</td>
+                        <td class="genero-cell">Ficción</td>
+                        <td class="status-cell">Best seller!</td>
+                        <td class="precio-cell">$75.000</td>
+                        <td class="coment-cell">
+                                Siempre tener en stock.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- =========== -->
+                    <!-- FILA 3 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-3.webp" alt="El resplandor" class="table-image">
+                        </td>
+                        <td class="name-cell">El resplandor</td>
+                        <td class="genero-cell">Terror</td>
+                        <td class="status-cell">Best seller!</td>
+                        <td class="precio-cell">$40.000</td>
+                        <td class="coment-cell">
+                            Siempre tener en stock.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- =========== -->
+                    <!-- FILA 4 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-4.webp" alt="Cuentos de otoño" class="table-image">
+                        </td>
+                        <td class="name-cell">Cuentos de otoño</td>
+                        <td class="genero-cell">Cuentos</td>
+                        <td class="status-cell">------</td>
+                        <td class="precio-cell">$10.000</td>
+                        <td class="coment-cell">
+                                No vendió bien, no reponer.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- =========== -->
+                    <!-- FILA 5 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-5.jpg" alt="Bestiario" class="table-image">
+                        </td>
+                        <td class="name-cell">Bestiario</td>
+                        <td class="genero-cell">Cuentos</td>
+                        <td class="status-cell">Clasico</td>
+                        <td class="precio-cell">$25.000</td>
+                        <td class="coment-cell">
+                                Tiene poco movimiento, reponer poca cantidad.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- =========== -->
+                    <!-- FILA 6 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-6.jpg" alt="El príncipe" class="table-image">
+                        </td>
+                        <td class="name-cell">El príncipe</td>
+                        <td class="genero-cell">No-ficción</td>
+                        <td class="status-cell">Clásico</td>
+                        <td class="precio-cell">$50.000</td>
+                        <td class="coment-cell">
+                                Reponer para el back to school.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- =========== -->
+                    <!-- FILA 7 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-7.jpg" alt="Corazón descalzo" class="table-image">
+                        </td>
+                        <td class="name-cell">Corazón descalzo</td>
+                        <td class="genero-cell">Novela romántica</td>
+                        <td class="status-cell">Best seller!</td>
+                        <td class="precio-cell">$70.000</td>
+                        <td class="coment-cell">
+                                No reponer, a nuestra comunidad no le gustó.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- =========== -->
+                    <!-- FILA 8 -->
+                    <!-- =========== -->
+
+                    <tr>
+                        <td class="image-cell">
+                            <img src="/assets/images/cards/tapa-8.jfif" alt="El cazador de destinos" class="table-image">
+                        </td>
+                        <td class="name-cell">El cazador de destinos</td>
+                        <td class="genero-cell">Novela romántica</td>
+                        <td class="status-cell">Nuevo!</td>
+                        <td class="precio-cell">$30.000</td>
+                        <td class="coment-cell">
+                            Vendió bien, reponer stock si se acaba.
+                        </td>
+                        <td class="tools-cell">
+                            <div class="icon-container">
+                            <button class="btn">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        </td>
+                    </tr>
+
+            </table>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+
+        <section class="footer-social">
+            <div class="descripcion-social">
+                Seguinos en nuestras redes y enterate todas las novedades:
+            </div>
+            <div class="iconos-social">
+                <div class="icono-ig">
+                    <i class="fa-brands fa-square-instagram icono"></i>
+                    <p>@instagram</p>
+                </div>
+                <div class="icono-fb">
+                    <i class="fa-brands fa-facebook icono"></i>
+                    <p>@facebook</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-contacto">
+            <div class="direccion">
+                <i class="fa-solid fa-location-dot icono"></i>
+                <p>Dirección: Lafinur 3396, CABA. </p>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope icono"></i>
+                <p>Email: hello@liberexpress.com</p>
+            </div>
+            <div class="telefono">
+                <i class="fa-solid fa-phone-volume icono"></i>
+                <p>Teléfono: (011) 1521864648</p>
+            </div>
+        </section>
+
+        <section class="footer-info">
+            <p>Somos una compañía sustentable con más de 30 años de trayectoria en el mercado.</p>
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

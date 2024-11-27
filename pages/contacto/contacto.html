@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/CSS/styless.css">
+    <link rel="stylesheet" href="/CSS/contacto.css">
+
+
+</head>
+
+<body>
+
+    <!-- ================= -->
+    <!-- ================= -->
+    <!-- ================= -->
+    <!-- NO APARECE LA USER INFO -->
+    <!-- ================= -->
+    <!-- ================= -->
+    <!-- ================= -->
+
+    <header>
+        <div class="main-header">
+
+            <!-- MENU HAMBURGUESA  -->
+            <input type="checkbox" id="burger" class="input-burger">
+            <label class="burger-container" for="burger">
+                <div class="burger"></div>
+            </label>
+
+            <!-- CLAIM + LOGO + USER INFO  -->
+
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+
+            <div class="user-info">
+                <i class="fa-regular fa-user user-avatar"></i>
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+            <div class="claim-contenedor">
+                <h1 class=" titulo-principal">Knowledge is</h1>
+                <h2 class="palabra-resaltada">Strength.</h2>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+
+                    <!-- Enlaces del menu de navegacion -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Administrador/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/suscripcion/suscripcion.html">Me quiero subscribir!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros/nosotros.html">Acerca de nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-form">
+            <h1>Contactate con nosotros</h1>
+        </div>
+
+        <div class="form-container">
+
+            <form class="form">
+                <div class="input-group">
+
+                    <div class="input-nombre">
+                        <label for="NOMBRE"> Nombre y Apellido:</label>
+                        <input type="text" name="nombre" id="NOMBRE" placeholder="Nombre y Apellido" required
+                            minlength="4" maxlength="120" pattern="^[a-zA-Z ]+$" autocomplete>
+                    </div>
+
+                    <div class="input-email">
+                        <label for="correo">Email:</label>
+                        <input type="email" name="email" id="correo" placeholder="email" required minlength="6"
+                            maxlength="150" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
+                    </div>
+
+                    <div class="input-mensaje">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea type="text" name="mensaje" id="mensaje" rows="5" required minlength="6"
+                            maxlength="150" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
+                    </textarea>
+                    </div>
+
+                    <div class="btn-contactar">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="mapa-contacto">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.197352305381!2d-58.41558026866533!3d-34.57636966616221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb579fe6a6dd5%3A0x38256ad937e5031d!2s3396%20Lafinur!5e0!3m2!1ses!2sar!4v1729781505576!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+
+        <section class="footer-social">
+            <div class="descripcion-social">
+                Seguinos en nuestras redes y enterate todas las novedades:
+            </div>
+            <div class="iconos-social">
+                <div class="icono-ig">
+                    <i class="fa-brands fa-square-instagram icono"></i>
+                    <p>@instagram</p>
+                </div>
+                <div class="icono-fb">
+                    <i class="fa-brands fa-facebook icono"></i>
+                    <p>@facebook</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-contacto">
+            <div class="direccion">
+                <i class="fa-solid fa-location-dot icono"></i>
+                <p>Dirección: Lafinur 3396, CABA. </p>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope icono"></i>
+                <p>Email: hello@liberexpress.com</p>
+            </div>
+            <div class="telefono">
+                <i class="fa-solid fa-phone-volume icono"></i>
+                <p>Teléfono: (011) 1521864648</p>
+            </div>
+        </section>
+
+        <section class="footer-info">
+            <p>Somos una compañía sustentable con más de 30 años de trayectoria en el mercado.</p>
+            <div class="contenedor-logo">
+                <img class="logo" src="https://liberexpress.es/wp-content/uploads/2021/07/liberexpress-logo.svg"
+                    alt="LOGO">
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
