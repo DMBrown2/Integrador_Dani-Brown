@@ -296,21 +296,22 @@ body {
     }
 
     .footer-info {
-        margin-right: 15px;
-        padding-bottom: 35px;
         position: relative;
         border-bottom: none;
-
-        .contenedor-logo {
-            position: absolute;
-            width: 42px;
-            right: 0;
-            bottom: 3px;
-        }
-
-        p {
+        
+        .info, p {
+            margin-right: 15px;
+            padding-bottom: 25px;
+            width: 70%;
             font-size: 14px;
             font-weight: 400;
+        }
+
+        .contenedor-logo {  
+            position: absolute;
+            width: 42px;
+            right: 10px;
+            bottom: 3px;
         }
 
     }

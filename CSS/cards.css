@@ -98,9 +98,6 @@
                 }
 
                 .card-icon-container {
-
-                    /* QUE QUEDE AL MEDIO DEL LIBRO */
-
                     border: none;
                     background-color: var(--lighter-color);
                     display: flex;
@@ -118,9 +115,7 @@
 
                     transform: translateY(65px);
                     opacity: 0;
-                    /* visibility: hidden; */
                     transition: background-color .25s ease-in-out, transform .5s ease-in-out, opacity .25s ease-in-out;
-                    /* border: 4px solid transparent;  */
 
                     &:hover {
                         background-color: var(--color-secundario);
