@@ -57,20 +57,21 @@ main {
 
         .titulo-imagen-libro {
             position: absolute;
-            bottom: 5px;
-            right: 15px;
-            width: 50%;
-            text-align: right;
+            bottom: 0;
+            left: 0;
+            width: 60%;
+            text-align: left;
+            margin: 12px;
 
             .parte-1 {
                 color: var(--color-primario);
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
             }
 
             .parte-2 {
                 color: var(--hover-color);
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
             }
 
@@ -112,20 +113,21 @@ main {
 
             .info-mision {
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: column;
                 align-items: center;
 
                 .parrafo-mision,
                 p {
                     font-size: 12px;
                     font-weight: 200;
-                    margin-bottom: 8px;
+                    text-align: center;
+                    margin: 0 12px 12px 12px;
                 }
 
                 .img-mision {
 
                     img {
-                        width: 50vw;
+                        width: 60vw;
                         margin: 0 12px;
                     }
 
@@ -165,143 +167,202 @@ main {
             color: var(--color-secundario);
             margin: 15px;
         }
+    }
+
+    .card-equipo-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 5px 10px 15px 16px;
+
+        .card-equipo {
+            flex-basis: 200px;
+            height: 400px;
+            width: 240px;
+            border: solid 1px var(--light-color);
+
+            &:hover {
+                box-shadow: 0 0 5px 1px var(--light-color);
+
+                .card-icon-container,
+                .icon {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
         }
 
-        .card-equipo-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-            padding: 5px 10px 15px 16px;
+        .card-img {
+            position: relative;
+            overflow: hidden;
 
-            .card-equipo {
-                flex-basis: 200px;
-                height: 400px;
-                width: 240px;
-                border: solid 1px var(--light-color);
+            .img,
+            img {
+                height: 250px;
+            }
+
+            .card-icon-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: var(--lighter-color);
+                width: 100px;
+                height: 50px;
+                cursor: pointer;
+                position: absolute;
+                top: 60%;
+                left: 30%;
+                transform: translateY(40px);
+                opacity: 0;
+                transition: background-color .25s ease-in-out, transform .5s ease-in-out, opacity .25s ease-in-out;
 
                 &:hover {
-                    box-shadow: 0 0 5px 1px var(--light-color);
-    
-                        .card-icon-container,
-                        .icon {
-                            transform: translateY(0);
-                            opacity: 1;
-                            visibility: visible;
-                        }
+                    background-color: var(--color-secundario);
+
+                    .icon {
+                        color: var(--color-primario);
                     }
                 }
 
-                .card-img {
-                    position: relative;
-                    overflow: hidden;
+                .icon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    text-decoration: none;
+                    padding: 2px;
+                    gap: 5px;
 
-                    .img,
-                    img {
-                        height: 250px;
-                    }
-
-                    .card-icon-container {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        border: none;
-                        background-color: var(--lighter-color);
-                        width: 100px;
-                        height: 50px;
-                        cursor: pointer;
-                        position: absolute;
-                        top: 60%;
-                        left: 30%;                        
-                        transform: translateY(40px);
-                        opacity: 0;
-                        transition: background-color .25s ease-in-out, transform .5s ease-in-out, opacity .25s ease-in-out;
-
-                        &:hover {
-                            background-color: var(--color-secundario);
-
-                            .icon {
-                                color: var(--color-primario);
-                            }
-                        }
-
-                        .icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 10px;
-                            text-decoration: none;
-                            padding: 2px;
-                            gap: 5px;
-
-                            &:hover {
-                                color: var(--hover-color);
-                            }
-                        }
-                    }
-
-                }
-
-                .card-info {
-                    margin: 8px;
-
-                    .titulo-imagen {
-                        color: var(--color-terciario);
-                        font-weight: 500;
-                        font-size: 15px;
-                        margin: 8px 0 7px 0;
-                        border-bottom: var(--lighter-color) 1px solid;
-                        width: 105px;
-                    }
-
-                    .info,
-                    p {
-                        color: var(--color-terciario);
-                        font-size: 12px;
-
-                        strong {
-                            font-weight: 600;
-                        }
+                    &:hover {
+                        color: var(--hover-color);
                     }
                 }
             }
+
+        }
+
+        .card-info {
+            margin: 8px;
+
+            .titulo-imagen {
+                color: var(--color-terciario);
+                font-weight: 500;
+                font-size: 15px;
+                margin: 8px 0 7px 0;
+                border-bottom: var(--lighter-color) 1px solid;
+                width: 105px;
+            }
+
+            .info,
+            p {
+                color: var(--color-terciario);
+                font-size: 12px;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
     }
+}
 
 
 @media screen and (width > 768px) {
-    main {
-        margin-top: 160px;
-    }
 
-    .mision {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
+    .nosotros-container {
+        margin-top: 100px;
 
-        .img-mision {
-            height: 350px;
-        }
-
-        .que-somos {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            margin-left: 15px;
-        }
-    }
-
-    .equipo {
-
-        .info-equipo {
+        .header-nosotros {
+            position: relative;
+            height: 30vw;
 
 
-            .info {
-                width: 450px;
+            .imagen-libro {
+                position: relative;
+                height: 100%;
+
+                img {
+                    height: 30vw;
+                    object-fit: cover;
+                }
+            }
+
+            .titulo-imagen-libro {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60%;
+                text-align: left;
+                margin: 12px;
             }
         }
 
+        .sobre-nosotros {
+            .nosotros-mision {
+                .info-mision {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: start;
+
+                    .parrafo-mision, p {
+                       text-align: left; 
+                       margin-right: 16px;
+                    }
+
+                    .img-mision {
+
+                        img {
+                            width: 40vw;
+                            margin: 0 8px 0 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
+
 }
+
+/* @media screen and (width < 1024px) {
+    .nosotros-container {
+
+        .header-nosotros {
+            position: relative;
+
+            .titulo-imagen-libro {
+                position: absolute;
+                bottom: 0;
+                margin: 12px;
+
+                .parte-1 {
+                    font-size: 11px;
+                }
+
+                .parte-2 {
+                    font-size: 11px;
+                }
+
+            }
+        }
+        .sobre-nosotros {
+            .nosotros-mision {
+                .info-mision {
+                    display: flex;
+                    flex-direction: column;
+
+                    .parrafo-mision {
+                        text-align: center;
+                        margin: 12px;
+                    }    
+                }
+            }
+
+        }
+    }
+    
+} */
