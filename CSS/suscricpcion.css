@@ -43,7 +43,7 @@
 
       .form {
           position: relative;
-          width: 380px;
+          width: 370px;
           background-color: var(--lighter-color);
           border-radius: 10%;
           padding: 35px;
@@ -72,18 +72,21 @@
 
               label {
                   display: flex;
-                  font-size: 15px;
+                  font-size: 12px;
                   font-weight: 500;
               }
 
               .input-genero,
               .input-clasif,
               .input-inline {
-                  font-size: 13px;
-                  margin: 0 5px 2px 0;
+                  font-size: 11px;
+                  display: flex;
+                  align-items: start;
+                  gap: 2px;
+                  flex-wrap: wrap;
 
                   label {
-                      font-size: 15px;
+                      font-size: 12px;
                   }
               }
 
