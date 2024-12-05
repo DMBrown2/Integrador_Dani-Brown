@@ -224,7 +224,7 @@ body {
     }
     }
 }
-
+ 
 
 /* ESTILOS FOOTER  */
 
@@ -247,7 +247,7 @@ body {
         padding-bottom: 15px;
 
         .descripcion-social {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
         }
 
@@ -273,7 +273,7 @@ body {
         padding-bottom: 15px;
 
         .titu-contacto {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
             margin-bottom: 8px;
         }
@@ -286,7 +286,7 @@ body {
 
             p {
                 text-align: left;
-                font-size: 14px;
+                font-size: 11px;
                 font-weight: 400;
             }
 
@@ -306,7 +306,7 @@ body {
             margin-right: 15px;
             padding-bottom: 25px;
             width: 70%;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
         }
 
@@ -369,6 +369,7 @@ body {
             flex: 1;
             border: none;
             border-right: 1px solid var(--lighter-color);
+            height: 135px;
         }
 
         .footer-info {

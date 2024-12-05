@@ -30,11 +30,9 @@ main {
 
     .contenedor-imagen {
         position: relative;
-        background-color: var(--lighter-color);
-        border-radius: 10%;
+        background-color: var(--light-color);
         width: 350px;
         height: 450px;
-        margin: 15px;
 
         .detalle-img {
         position: absolute;
@@ -44,15 +42,33 @@ main {
         padding: 25px;
         }
 
+        .status {
+            position: absolute;
+            background-color: var(--color-secundario);
+            padding: 3px 6px;
+            color: var(--color-primario);
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            border-radius: 8px;
+        }
+
     }
 
     .contenedor-info {
         position: relative;
         width: 350px;
-        border: 1px solid var(--lighter-color);
+        height: 250px;
+        border: 1px solid var(--light-color);
         padding: 15px;
-        border-radius: 10%;
-        margin: 15px;
+        margin-bottom: 20px;
+
+        .genero {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--color-secundario);
+            margin-bottom: 3px;
+        }
 
         .titulo-detalle {
             font-size: 22px;
@@ -62,21 +78,33 @@ main {
 
         .precio {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--color-secundario);
             margin-bottom: 8px;
         }
 
         .detalle-info {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: 300;
         }
 
-        .btn-comprar {
+        .cant-prod {
+            position: absolute;
+            bottom: 5px;
+            height: 35px;
+            background-color: var(--color-primario);
             text-align: center;
+            border-color: var(--light-color);
+            font-family: var(--font);
+            font-size: 12px;
+
+        }
+
+        .btn-comprar {
             position:absolute;
-            bottom: 10px;
+            bottom: 0;
             left: 50%;
+            text-align: center;
     
             button {
                 color: var(--color-primario);
@@ -87,6 +115,7 @@ main {
                 transform: translateX(-50%);
                 margin-bottom: 5px;
                 font-family: var(--font);
+                font-size: 12px;
                 transition: background-color .25s ease-in-out, color .25s ease-in-out;
     
                 &:hover {
@@ -111,6 +140,7 @@ main {
         flex-direction: row;
         align-items: start;
         justify-content: center;
+        gap: 8px;
 
         .contenedor-info {
             height: 450px;

@@ -144,7 +144,7 @@ main {
         .claim-equipo {
             display: flex;
             flex-direction: column;
-            width: 35vw;
+            width: 55vw;
             margin: 15px;
 
             .frase-1 {
@@ -181,6 +181,7 @@ main {
             height: 400px;
             width: 240px;
             border: solid 1px var(--light-color);
+            height: fit-content;
 
             &:hover {
                 box-shadow: 0 0 5px 1px var(--light-color);
@@ -247,13 +248,19 @@ main {
         }
 
         .card-info {
-            margin: 8px;
+            margin: 8px 0 10px 8px;
+
+            .cargo {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-secundario);
+            }
 
             .titulo-imagen {
                 color: var(--color-terciario);
                 font-weight: 500;
                 font-size: 15px;
-                margin: 8px 0 7px 0;
+                margin: 3px 0 7px 0;
                 border-bottom: var(--lighter-color) 1px solid;
                 width: 105px;
             }

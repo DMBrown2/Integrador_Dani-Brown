@@ -153,6 +153,7 @@
                     right: 10px;
                     font: var(--font);
                     font-weight: 500;
+                    font-size: 12px;
                     transform: translateY(65px);
                     opacity: 0;
                     overflow: hidden;
